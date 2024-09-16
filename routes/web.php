@@ -1,18 +1,16 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('page', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+Route::get('/',[HomeController::class,'home'])->name('home');
+Route::get('/project',[ProjectController::class,'project'])->name('project');
+Route::get('/contact',[ContactController::class,'contact'])->name('contact');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

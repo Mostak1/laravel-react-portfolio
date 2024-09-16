@@ -1,6 +1,6 @@
 import { Link } from '@inertiajs/react';
-import image from "../../../public/assets/img/banner/page-banner-img.png";
-import shape from "../../../public/assets/img/shape/page-banner-shape.png";
+import image from "../../../../../public/assets/img/banner/page-banner-img.png";
+import shape from "../../../../../public/assets/img/shape/page-banner-shape.png";
 
 const BreadCrumb = ({title, innerTitle}) => {
     return (

@@ -1,5 +1,5 @@
 import { Link } from '@inertiajs/react';
-import image from "../../../public/assets/img/404/404.png";
+import image from "../../../../../../public/assets/img/404/404.png";
 
 const Error = () => {
     return (

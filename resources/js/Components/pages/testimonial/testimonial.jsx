@@ -1,6 +1,6 @@
-import icon from "../../../public/assets/img/testimonial/testimonial-quote-two.png";
-import avatar1 from "../../../public/assets/img/avatar/avatar-1.jpg";
-import avatar2 from "../../../public/assets/img/avatar/avatar-2.jpg";
+import icon from "../../../../../../public/assets/img/testimonial/testimonial-quote-two.png";
+import avatar1 from "../../../../../../public/assets/img/avatar/avatar-1.jpg";
+import avatar2 from "../../../../../../public/assets/img/avatar/avatar-2.jpg";
 
 const TestimonialMain = () => {
     return (

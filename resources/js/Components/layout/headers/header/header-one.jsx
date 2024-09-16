@@ -6,8 +6,8 @@ import SideBar from '../offcanvas';
 
 import MobileMenuPopup from '../mobile-menu/menu-area';
 import { Link } from '@inertiajs/react';
-import logo1 from '../../../../../../public/assets/img/logo-1.png'
-import logo2 from '../../../../../../public/assets/img/logo-2.png'
+import logo1 from "../../../../../../public/assets/img/logo-1.png";
+import logo2 from "../../../../../../public/assets/img/logo-2.png";
 // import { Link } from '@inertiajs/react';
 
 const HeaderOne = ({variant}) => {
