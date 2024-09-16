@@ -1,45 +1,50 @@
-import { useState } from "react";
-import ModalVideo from "react-modal-video";
-import { Link } from '@inertiajs/react';
-import bannerBg from "../../../../public/assets/img/banner/banner-five-bg.png";
-import banner1 from "../../../../public/assets/img/banner/banner-five.png";
-import banner2 from "../../../../public/assets/img/banner/banner-five-2.png";
 
-const BannerFive = () => {
-    const [openVideo, setOpenVideo] = useState(false);
-    const openVideoModal = () => {
-        setOpenVideo(true);
-    };
+import { Link } from '@inertiajs/react';
+import banner1 from "../../../../../../public/assets/img/banner/banner-right-img.jpg";
+import bannerShape from "../../../../../../public/assets/img/shape/banner-shape.png";
+
+const BannerOne = () => {
     return (
-        <>
-            <div className="banner__five" style={{backgroundImage: `url(${bannerBg.src})`}}>
+            <>
+            <div className="banner__one"> 
+                <div className="banner-shape">
+                    <div className="shape banner-shape-1"></div>
+                    <div className="shape banner-shape-2"></div>
+                    <div className="shape banner-shape-3"></div>
+                    <div className="shape banner-shape-4"></div>
+                    <img className="shape banner-shape-5" src={bannerShape} alt="image" />
+                    <div className="shape banner-shape-7"></div>
+                    <div className="shape banner-shape-6"></div>
+                </div>
                 <div className="container">
                     <div className="row align-items-center gy-4 justify-content-center">
-                        <div className="col-xl-7 col-lg-6">
-                            <div className="banner__five-content">
-                                <span className="subtitle-one">Drive Growth</span>
-                                <h2>Next-Gen Software for Your Business</h2>
-                                <p>Embrace the latest advancements in technology with our cutting-edge software engineered to drive innovation</p>
-                                <div className="banner__five-content-bottom">
-                                    <Link href="/contact" className="btn-two">Apply Today<i className="fas fa-arrow-right"></i></Link>
-                                    <span className="banner__five-content-video-btn video-popup" onClick={openVideoModal}><i className="fas fa-play"></i></span>
-                                </div>
+                        <div className="col-xl-6 col-lg-6">
+                            <div className="banner__one-content">
+                                <span className="subtitle-one">Digital Growth</span>
+                                <h2>Creating Dynamic and Impactful  <span>Web Experiences</span></h2>
+                                <p>Exploring new possibilities and embracing emerging trends to deliver transformative IT solutions</p>
+                                {/* <Link href="/services" className="btn-two">Find Solutions
+                                    <i className="fas fa-arrow-right"></i>
+                                </Link> */}
                             </div>
                         </div>
-                        <div className="col-xl-5 col-lg-6 col-md-9">
-                            <div className="banner__five-image">
-                                <div className="banner__five-image-wrapper">
-                                    <img src={banner1.src} alt="image" />
-                                    <img src={banner2.src} className="img-2 animate-y-axis" alt="image" />
+                        <div className="col-xl-5 offset-xl-1 col-lg-6 col-md-9">
+                            <div className="banner__one-image">
+                                <div className="banner__one-image-wrapper">
+                                    <div className="banner__one-image-wrapper-shapes animate-rotate">
+                                        <div className="shape shape-1"></div>
+                                        <div className="shape shape-2"></div>
+                                    </div>
+                                    <img src={banner1} alt="banner-image" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <ModalVideo className='video-modal' channel="youtube" autoplay isOpen={openVideo} videoId="SZEflIVnhH8" onClose={() => setOpenVideo(false)} />
         </>
+
     );
 };
 
-export default BannerFive;
+export default BannerOne;

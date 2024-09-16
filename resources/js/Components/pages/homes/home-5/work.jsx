@@ -1,38 +1,63 @@
-import workBg from "../../../../public/assets/img/work-process/work-process-bg-2.png";
-import arrow1 from "../../../../public/assets/img/work-process/work-process-arrow-1.png";
-import arrow2 from "../../../../public/assets/img/work-process/work-process-arrow-2.png";
-import arrow3 from "../../../../public/assets/img/work-process/work-process-arrow-1.png";
+import Count from "../../common/count";
+import workBg from '../../../../../../public/assets/img/work-process/work-process-bg.png';
+import image1 from '../../../../../../public/assets/img/work-process/work-process-1.png';
+import image2 from '../../../../../../public/assets/img/work-process/work-process-2.png';
 
-const WorkAreaFive = () => {
-    return (        
-        <div className="work-process__three" style={{backgroundImage: `url(${workBg.src})`}}>
+const WorkArea = () => {
+    return (
+        <div className="work-process-area__one section-padding" style={{backgroundImage: `url(${workBg})`}}>
             <div className="container">
-                <div className="row justify-content-center text-center mb-50">
-                    <div className="col-xl-6 col-lg-7 col-md-9">
-                        <span className="subtitle-one">Work Process</span>
-                        <h2>Workflow Journey</h2>
+                <div className="row align-items-end work-process-area__one-title">
+                    <div className="col-xl-7 col-lg-7">
+                        <div className="work-process-area__one-content-left">
+                            <span className="subtitle-one">Work Process</span>
+                            <h2>Sustainable and Responsible Computing</h2>
+                        </div>
+                    </div>
+                    <div className="col-xl-4 offset-xl-1 col-lg-4 offset-lg-1">
+                        <div className="work-process-area__one-content-right">
+                            <p>Discuss strategies for reducing energy consumption in data centers, personal devices, and reduce power usage</p>
+                        </div>
                     </div>
                 </div>
-                <div className="work-process__three-card">
-                    <div className="work-process__three-card-arrows">
-                        <img src={arrow1.src} alt="arrow" className="arrow-1" />
-                        <img src={arrow2.src} alt="arrow" className="arrow-2" />
-                        <img src={arrow3.src} alt="arrow" className="arrow-3" />
+                <div className="row justify-content-center gy-4">
+                    <div className="col-xl-6">
+                        <div className="work-process-area__one-single-work">
+                            <span>01</span>
+                            <div className="work-process-area__one-single-work-content">
+                                <h4>Assess Requirements Precisely</h4>
+                                <p>Begin by comprehensively understanding your business needs to ensure a perfect fit for tech solutions.</p>
+                            </div>
+                        </div>
+                        <div className="work-process-area__one-single-work">
+                            <span>02</span>
+                            <div className="work-process-area__one-single-work-content">
+                                <h4>Develop Custom Solutions</h4>
+                                <p>Engage in crafting tailor-made software designed meticulously to align with your specific targets.</p>
+                            </div>
+                        </div>
+                        <div className="work-process-area__one-single-work">
+                            <span>03</span>
+                            <div className="work-process-area__one-single-work-content">
+                                <h4>Implement and Support</h4>
+                                <p>Seamlessly integrate the new systems into framework with ongoing support for continual optimization.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="work-process__three-card-single">
-                        <h3>01</h3>
-                        <h5>Idea Generation</h5>
-                        <p>Creativity at this initial stage, we focus on understanding your unique challenge</p>
-                    </div>
-                    <div className="work-process__three-card-single middle">
-                        <h3>02</h3>
-                        <h5>Solution Development</h5>
-                        <p>Transitioning from ideas to actionable solutions, our experts employ cutting-edge technologies</p>
-                    </div>
-                    <div className="work-process__three-card-single">
-                        <h3>03</h3>
-                        <h5>Outcome Delivery</h5>
-                        <p>The culmination of our process, outcome delivery, is where plans become reality.</p>
+                    <div className="col-xl-6">
+                        <div className="work-process-area__one-right-img">
+                            <img src={image1} alt="image" />
+                        </div>
+                        <div className="work-process-area__one-right-counter-img">
+                            <div className="img-counter">
+                                <div className="counter-only">
+                                    <h2 className="counter"><Count number={20}/></h2>
+                                    <h2>+</h2>
+                                </div>
+                                <span>years of experiences</span>
+                            </div>
+                            <img src={image2} alt="image" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -40,4 +65,4 @@ const WorkAreaFive = () => {
     );
 };
 
-export default WorkAreaFive;
+export default WorkArea;

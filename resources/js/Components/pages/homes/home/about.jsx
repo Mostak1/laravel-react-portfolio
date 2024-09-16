@@ -1,15 +1,15 @@
 import { Link } from '@inertiajs/react';
 import Count from "../../common/count";
 
-import brand1 from "../../../../../../public/assets/img/brand/brand-1.png";
-import brand2 from "../../../../../../public/assets/img/brand/brand-2.png";
-import brand3 from "../../../../../../public/assets/img/brand/brand-3.png";
-import brand4 from "../../../../../../public/assets/img/brand/brand-4.png";
-import brand5 from "../../../../../../public/assets/img/brand/brand-5.png";
-import about1 from "../../../../../../public/assets/img/about/about-1.png";
-import about2 from "../../../../../../public/assets/img/about/about-2.png";
 
 const About = () => {
+    const brand1 = window.imageUrl+"img/brand/brand-1.png";
+    const brand2 = window.imageUrl+"img/brand/brand-2.png";
+    const brand3 = window.imageUrl+"img/brand/brand-3.png";
+    const brand4 = window.imageUrl+"img/brand/brand-4.png";
+    const brand5 = window.imageUrl+"img/brand/brand-5.png";
+    const about1 = window.imageUrl+"img/about/about-1.png";
+    const about2 = window.imageUrl+"img/about/about-2.png";
     return (
         <>
         <div className="brand__area pt-115">

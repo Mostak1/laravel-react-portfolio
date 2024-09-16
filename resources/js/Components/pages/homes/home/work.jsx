@@ -1,9 +1,9 @@
 import Count from "../../common/count";
-import workBg from '../../../../../../public/assets/img/work-process/work-process-bg.png';
-import image1 from '../../../../../../public/assets/img/work-process/work-process-1.png';
-import image2 from '../../../../../../public/assets/img/work-process/work-process-2.png';
 
 const WorkArea = () => {
+    const workBg = window.imageUrl+'img/work-process/work-process-bg.png';
+    const image1 = window.imageUrl+'img/work-process/work-process-1.png';
+    const image2 = window.imageUrl+'img/work-process/work-process-2.png';
     return (
         <div className="work-process-area__one section-padding" style={{backgroundImage: `url(${workBg})`}}>
             <div className="container">

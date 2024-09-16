@@ -1,6 +1,6 @@
-import image1 from "../../../../../../public/assets/img/why-choose-us/why-choose.png";
-import image2 from "../../../../../../public/assets/img/shape/why-choose-shape.png";
 const ChooseUs = () => {
+    const image1 =window.imageUrl+"img/why-choose-us/why-choose.png";
+    const image2 =window.imageUrl+"img/shape/why-choose-shape.png";
     return (
         <>
         <div className="why-choose-us__one section-padding">

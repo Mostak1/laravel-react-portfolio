@@ -1,5 +1,5 @@
 import { Link } from '@inertiajs/react';
-import logo from "../../../../../../public/assets/img/logo-2.png";
+import logo from "../../../../../public/assets/img/logo-2.png";
 import servicesData from "@/components/data/services-data";
 import Social from "@/components/data/social";
 

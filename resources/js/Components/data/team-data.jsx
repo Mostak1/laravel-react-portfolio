@@ -1,9 +1,9 @@
-import team1 from "../../public/assets/img/team/team-1.jpg";
-import team2 from "../../public/assets/img/team/team-2.jpg";
-import team3 from "../../public/assets/img/team/team-3.jpg";
-import team4 from "../../public/assets/img/team/team-4.jpg";
-import team5 from "../../public/assets/img/team/team-5.jpg";
-import team6 from "../../public/assets/img/team/team-6.jpg";
+import team1 from "../../../../public/assets/img/team/team-1.jpg";
+import team2 from "../../../../public/assets/img/team/team-2.jpg";
+import team3 from "../../../../public/assets/img/team/team-3.jpg";
+import team4 from "../../../../public/assets/img/team/team-4.jpg";
+import team5 from "../../../../public/assets/img/team/team-5.jpg";
+import team6 from "../../../../public/assets/img/team/team-6.jpg";
 
 const teamData = [
     {

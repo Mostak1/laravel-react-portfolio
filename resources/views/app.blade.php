@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="{{ asset('assets/sass/style.css') }}">
 
     <!-- Scripts -->
+     <!-- Global asset path -->
+     <script>
+        window.imageUrl = "{{ asset('assets') }}/";
+    </script>
     @routes
     @viteReactRefresh
     @vite(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx"])

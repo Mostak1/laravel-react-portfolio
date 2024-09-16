@@ -2,8 +2,8 @@
 import { Link } from '@inertiajs/react';
 import MainMenu from '../header-menu';
 import { useEffect, useState } from 'react';
-import logo1 from "../../../../public/assets/img/logo-1.png";
-import logo2 from "../../../../public/assets/img/logo-2.png";
+import logo1 from "../../../../../../public/assets/img/logo-1.png";
+import logo2 from "../../../../../../public/assets/img/logo-2.png";
 import MobileMenuPopup from '../mobile-menu/menu-area';
 
 const HeaderThree = ({variant}) => {

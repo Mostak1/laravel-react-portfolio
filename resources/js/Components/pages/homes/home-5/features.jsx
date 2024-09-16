@@ -1,6 +1,6 @@
 
+import image from "../../../../../../public/assets/img/service/services.png";
 const Features = () => {
-    const image = window.imageUrl+"img/service/services.png";
     return (
         <>
         <div className="services__one section-padding">

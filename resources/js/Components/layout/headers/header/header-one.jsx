@@ -6,11 +6,11 @@ import SideBar from '../offcanvas';
 
 import MobileMenuPopup from '../mobile-menu/menu-area';
 import { Link } from '@inertiajs/react';
-import logo1 from "../../../../../../public/assets/img/logo-1.png";
-import logo2 from "../../../../../../public/assets/img/logo-2.png";
 // import { Link } from '@inertiajs/react';
 
 const HeaderOne = ({variant}) => {
+    const logo1 = window.imageUrl+"img/logo-1.png";
+    const logo2 = window.imageUrl+"img/logo-2.png";
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [menuSidebar, setMenuSidebar] = useState(false);
     const [search, setSearch] = useState(false);

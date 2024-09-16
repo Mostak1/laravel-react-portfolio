@@ -1,57 +1,103 @@
-import React from 'react';
-import testimonial from "../../../../public/assets/img/testimonial/testimonial-two.png";
-import image from "../../../../public/assets/img/testimonial/testimonial-quote-two.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade, Autoplay, Navigation} from 'swiper/modules';
+import { Link } from '@inertiajs/react';
 
-const TestimonialThree = () => {
+const Testimonial = () => {
+    const testimonialBg ="assets/img/testimonial/testimonial.png";
+const slideControl = {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },			
+    autoplay: {
+        delay: 4000,
+        reverseDirection: false,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+    }
+};
+
     return (
-        <div className="testimonial__three section-padding pt-0">
+        <>        
+        <div className="testimonial__one section-padding">
             <div className="container">
-                <div className="row justify-content-center text-center">
-                    <div className="col-xl-6 col-lg-7 col-md-10 col-sm-11">
-                        <div className="testimonial__three-title">
-                            <span className="subtitle-one">Client Testimonial</span>
-                            <h2>Enhance productivity with IT <span className="highlighted-two">expertise</span></h2>
+                <div className="row">
+                    <div className="col-xl-6 col-lg-6">
+                        <div className="testimonial__one-left" style={{backgroundImage: `url(${testimonialBg.src})`}}>
+                            <div className="testimonial__one-left-title">
+                                <span className="subtitle-one">Client Testimonial</span>
+                                <h2>WebTech Solutions the <span className="highlighted">transfor</span> </h2>
+                                <Link href="/contact" className="btn-one">Get Support
+                                    <i className="fas fa-arrow-right"></i>
+                                </Link>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="row g-0">
-                    <div className="col-xl-6">
-                        <div className="testimonial__three-left" style={{backgroundImage: `url(${testimonial.src})`}}></div>
-                    </div>
-                    <div className="col-xl-6">
-                        <div className="testimonial__three-right">
-                            <div className="testimonial__three-slider">
-                                <div className="swiper-wrapper">
-                                    <div className="single-slider">
-                                        <div className="single-slider-top">
-                                            <img src={image.src} alt="image" />
-                                            <div className="single-slider-rating">
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star not-rated"></i>
-                                            </div>
+                    <div className="col-xl-6 col-lg-6">
+                        <div className="testimonial__one-right">
+                        <Swiper modules={[EffectFade, Autoplay, Navigation]} {...slideControl}>
+                            <SwiperSlide>
+                                <div className="single-slider">
+                                    <div className="single-slider-user">
+                                        <div className="single-slider-user-name">
+                                            <h4>Nasir Al Shakib</h4>
+                                            <span>Content Creator</span>
                                         </div>
-                                        <p>Their product exceeded his my ro expectationsa  The the quality and attention to  moutstandin an  and it has become an essential active</p>
-                                        <div className="single-slider-user">
-                                            <div className="single-slider-user-img">
-                                                <img src="assets/img/testimonial/user-pic.png" alt="image" />
-                                            </div>
-                                            <div className="single-slider-user-name">
-                                                <h4>Nasir Al Shakib </h4>
-                                                <span>Content Creator</span>
-                                            </div>
+                                        <div className="single-slider-user-rating">
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star not-rated"></i>
                                         </div>
                                     </div>
+                                    <p>Their product exceeded his my ro expectations. The the quality and attention to  moutstandin an  and it has become an essential most a education the a man who can do tant clearly</p>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="single-slider">
+                                    <div className="single-slider-user">
+                                        <div className="single-slider-user-name">
+                                            <h4>Devon Lane</h4>
+                                            <span>Marketing</span>
+                                        </div>
+                                        <div className="single-slider-user-rating">
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star"></i>
+                                            <i className="fas fa-star not-rated"></i>
+                                        </div>
+                                    </div>
+                                    <p>Their product exceeded his my ro expectations. The the quality and attention to  moutstandin an  and it has become an essential most a education the a man who can do tant clearly</p>
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
+                            <div className="testimonial__one-right-bottom">
+                                <div className="slider-arrow">
+                                    <i className="swiper-button-prev fas fa-arrow-left"></i>
+                                    <i className="swiper-button-next fas fa-arrow-right"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>     
+        </>
     );
 };
 
-export default TestimonialThree;
+export default Testimonial;

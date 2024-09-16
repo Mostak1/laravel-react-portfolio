@@ -1,7 +1,8 @@
 import { Link } from '@inertiajs/react';
 import Social from '@/components/data/social';
-import logo2 from "../../../../../public/assets/img/logo-2.png";
 const SideBar = ({ isOpen, setIsOpen }) => {
+	const logo2 = window.imageUrl+"img/logo-2.png";
+
     return (
         <>
             <div className={`header__area-menubar-right-sidebar-popup ${isOpen ? 'active' : ''}`}>

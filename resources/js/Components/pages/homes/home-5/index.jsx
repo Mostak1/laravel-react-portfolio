@@ -1,35 +1,38 @@
 "use client";
+import React from 'react';
+import BannerOne from '@/Components/Pages/Homes/Home/Banner';
+import About from '@/Components/Pages/Homes/Home/About';
+import Features from '@/Components/Pages/Homes/Home/Features';
+import Portfolio from '@/Components/Pages/Homes/Home/Portfolio';
+import Pricing from '@/Components/Pages/Homes/Home/Pricing';
+import Blog from '@/Components/Pages/Homes/Home/Blog';
+import Testimonial from '@/Components/Pages/Homes/Home/Testimonial';
 import SEO from "@/components/data/seo";
-import HeaderFive from "@/components/layout/headers/header/header-five";
-import BannerFive from "./banner";
-import AboutFive from "./about";
-import WorkAreaFive from "./work";
-import Solution from "./solution";
-import ServicesFive from "./services";
-import Choose from "./choose";
-import TestimonialFive from "./testimonial";
-import BlogFive from "./blog";
-import FooterFive from "@/components/layout/footers/footer-five";
-import ScrollToTop from "../../common/scroll/scroll-to-top";
+import HeaderOne from "@/components/layout/headers/header/header-one";
+import FooterOne from "@/components/layout/footers/footer-one";
+import ScrollToTop from '../../common/scroll/scroll-to-top';
+import ChooseUs from './choose-us';
+import WorkArea from './work';
 
-const HomeFive = () => {
 
+const HomeOne = () => {
     return (
         <div>
-            <SEO pageTitle='Software Solutions' />
-            <HeaderFive />
-            <BannerFive />
-            <AboutFive />
-            <WorkAreaFive />
-            <Solution />
-            <ServicesFive />
-            <Choose />
-            <TestimonialFive />
-            <BlogFive />
-            <FooterFive />
-            <ScrollToTop />
+            <SEO pageTitle='Technology' />
+            <HeaderOne />
+            <BannerOne />
+            <About />
+            <ChooseUs/>
+            <Features />
+            <Portfolio />
+            {/* <Pricing /> */}
+            <WorkArea/>
+            {/* <Testimonial /> */}
+            {/* <Blog/> */}
+            <FooterOne/>
+            <ScrollToTop/>
         </div>
     );
 };
 
-export default HomeFive;
+export default HomeOne;

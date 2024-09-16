@@ -1,54 +1,55 @@
-import image1 from "../../../../public/assets/img/about/about-three.png";
-import image2 from "../../../../public/assets/img/about/about-three-2.png";
-import image3 from "../../../../public/assets/img/about/about-three-3.png";
+import { Link } from '@inertiajs/react';
 import Count from "../../common/count";
 
-const AboutThree = () => {
+import brand1 from "../../../../../../public/assets/img/brand/brand-1.png";
+import brand2 from "../../../../../../public/assets/img/brand/brand-2.png";
+import brand3 from "../../../../../../public/assets/img/brand/brand-3.png";
+import brand4 from "../../../../../../public/assets/img/brand/brand-4.png";
+import brand5 from "../../../../../../public/assets/img/brand/brand-5.png";
+import about1 from "../../../../../../public/assets/img/about/about-1.png";
+import about2 from "../../../../../../public/assets/img/about/about-2.png";
+
+const About = () => {
     return (
-        <div className="about__three section-padding">
+        <>
+        <div className="brand__area pt-115">
             <div className="container">
-                <div className="row align-items-center gy-4">
-                    <div className="col-xl-6 col-lg-6 col-md-10 col-sm-12">
-                        <div className="about__three-content">
-                            <span className="subtitle-one">About us</span>
-                            <h2>Uniting Ideas Power of <span className="highlighted-two">Collaboration</span></h2>
-                            <p>Harness the collective brilliance of teamwork with our model for collaboration, fostering innovation and thought integration</p>
-                            <div className="about__three-content-service">
-                                <div className="about__three-content-service-single">
-                                    <i className="flaticon-good-feedback"></i>
-                                    <div className="content">
-                                        <h4>CyberSecure IT</h4>
-                                        <p>IT Technology is an category encompassing aspects  category encompassing aspects</p>
+                <div className="row">
+                    <div className="col-xl-12">
+                        <div className="text__slider">
+                            <div className="text-slide">
+                                <div className="sliders scroll">
+                                    <div className="brand__area-item">
+                                        <img src={brand1} alt="image" />
+                                    </div>
+                                    <div className="brand__area-item">
+                                        <img src={brand2} alt="image" />
+                                    </div>
+                                    <div className="brand__area-item">
+                                        <img src={brand3} alt="image" />
+                                    </div>
+                                    <div className="brand__area-item">
+                                        <img src={brand4} alt="image" />
+                                    </div>
+                                    <div className="brand__area-item">
+                                        <img src={brand5} alt="image" />
                                     </div>
                                 </div>
-                                <div className="about__three-content-service-single">
-                                    <i className="flaticon-incoming-message"></i>
-                                    <div className="content">
-                                        <h4>Power up your IT</h4>
-                                        <p>IT Technology is an category encompassing aspects  category encompassing aspects</p>
+                                <div className="sliders scroll">
+                                    <div className="brand__area-item">
+                                        <img src={brand1} alt="image" />
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-6 col-lg-6 col-md-9">
-                        <div className="about__three-right">
-                            <div className="row align-items-center">
-                                <div className="about__three-right-counter">
-                                    <h4 className="counter"><Count number={25}/></h4>
-                                    <span>Years Of experience</span>								
-                                </div>
-                                <div className="col-xl-6 col-lg-7 col-md-6 col-sm-6">
-                                    <div className="about__three-right-image-left-side">
-                                        <img src={image1.src} alt="image" />
+                                    <div className="brand__area-item">
+                                        <img src={brand2} alt="image" />
                                     </div>
-                                </div>
-                                <div className="col-xl-6 col-lg-5 col-md-5 col-sm-6">
-                                    <div className="about__three-right-image">
-                                        <img src={image2.src} alt="image" />
+                                    <div className="brand__area-item">
+                                        <img src={brand3} alt="image" />
                                     </div>
-                                    <div className="about__three-right-image">
-                                        <img src={image3.src} alt="image" />
+                                    <div className="brand__area-item">
+                                        <img src={brand4} alt="image" />
+                                    </div>
+                                    <div className="brand__area-item">
+                                        <img src={brand5} alt="image" />
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +58,59 @@ const AboutThree = () => {
                 </div>
             </div>
         </div>
+        <div className="about__one section-padding">
+            <div className="container">
+                <div className="row align-items-center flex-wrap-reverse gy-4">
+                    <div className="col-xl-6 col-lg-5">
+                        <div className="about__one-image">
+                            <div className="experience-bar animate-y-axis-slider">
+                                <i className="flaticon-consultant"></i>
+                                <div className="experience-bar-right">
+                                    <div className="experience-bar-counter">
+                                        {/* <h4 className="counter"><Count number={25}/></h4> */}
+                                        {/* <span>+</span> */}
+                                    </div>
+                                    <span>Experience with Web Application</span>
+                                </div>
+                            </div>
+                            <div className="about__one-image-wrapper">
+                                <img src={about1} alt="image" className="image-1" />
+                                <img src={about2} alt="image" className="image-2" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-6 col-lg-7 col-md-9">
+                        <div className="about__one-content">
+                            {/* <span className="subtitle-one">About us</span> */}
+                            <h2>Transform Business to Technology</h2>
+                            <p>
+                            Information Technology (IT) is a broad field that covers all aspects of technology and its application across different industries. It includes areas like software development, hardware systems, data management, networking, cybersecurity, and more, focusing on leveraging technology to improve operations, productivity, and innovation in both business and everyday life.</p>
+                            <div className="about__one-content-service">
+                                <div className="service">
+                                    <i className="far fa-check-circle"></i>
+                                    <span>Back-End Development Experts</span>
+                                </div>
+                                <div className="service">
+                                    <i className="far fa-check-circle"></i>
+                                    <span>Web App Developments</span>
+                                </div>
+                                <div className="service">
+                                    <i className="far fa-check-circle"></i>
+                                    <span>IT Infrastructure Solutions</span>
+                                </div>
+                                <div className="service">
+                                    <i className="far fa-check-circle"></i>
+                                    <span>Data Analytics Consulting</span>
+                                </div>
+                            </div>
+                            {/* <Link href="/about" className="btn-one">Discover More<i className="fas fa-arrow-right"></i></Link> */}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </>
     );
 };
 
-export default AboutThree;
+export default About;

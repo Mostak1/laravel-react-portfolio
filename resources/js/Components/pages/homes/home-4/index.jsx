@@ -1,32 +1,38 @@
 "use client";
+import React from 'react';
+import BannerOne from '@/Components/Pages/Homes/Home/Banner';
+import About from '@/Components/Pages/Homes/Home/About';
+import Features from '@/Components/Pages/Homes/Home/Features';
+import Portfolio from '@/Components/Pages/Homes/Home/Portfolio';
+import Pricing from '@/Components/Pages/Homes/Home/Pricing';
+import Blog from '@/Components/Pages/Homes/Home/Blog';
+import Testimonial from '@/Components/Pages/Homes/Home/Testimonial';
 import SEO from "@/components/data/seo";
-import HeaderFour from "@/components/layout/headers/header/header-four";
-import FooterFour from "@/components/layout/footers/footer-four";
-import BannerFour from "./banner";
-import AboutFour from "./about";
-import ServicesFour from "./services";
-import ChooseFour from "./choose";
-import Tab from "./tab/tab";
-import Video from "./video";
-import BlogFour from "./blog";
-import ScrollToTop from "../../common/scroll/scroll-to-top";
+import HeaderOne from "@/components/layout/headers/header/header-one";
+import FooterOne from "@/components/layout/footers/footer-one";
+import ScrollToTop from '../../common/scroll/scroll-to-top';
+import ChooseUs from './choose-us';
+import WorkArea from './work';
 
-const HomeFour = () => {
+
+const HomeOne = () => {
     return (
         <div>
-            <SEO pageTitle='Digital Business' />
-            <HeaderFour />
-            <BannerFour />
-            <AboutFour />
-            <ServicesFour />
-            <ChooseFour />
-            <Tab />
-            <Video />
-            <BlogFour />
-            <FooterFour />
-            <ScrollToTop />
+            <SEO pageTitle='Technology' />
+            <HeaderOne />
+            <BannerOne />
+            <About />
+            <ChooseUs/>
+            <Features />
+            <Portfolio />
+            {/* <Pricing /> */}
+            <WorkArea/>
+            {/* <Testimonial /> */}
+            {/* <Blog/> */}
+            <FooterOne/>
+            <ScrollToTop/>
         </div>
     );
 };
 
-export default HomeFour;
+export default HomeOne;

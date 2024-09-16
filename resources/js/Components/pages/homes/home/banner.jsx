@@ -1,9 +1,9 @@
 
 import { Link } from '@inertiajs/react';
-import banner1 from "../../../../../../public/assets/img/banner/banner-right-img.jpg";
-import bannerShape from "../../../../../../public/assets/img/shape/banner-shape.png";
 
 const BannerOne = () => {
+    const banner1 = window.imageUrl+"img/banner/banner-right-img.jpg";
+    const bannerShape = window.imageUrl+"img/shape/banner-shape.png";
     return (
             <>
             <div className="banner__one"> 
@@ -20,7 +20,7 @@ const BannerOne = () => {
                     <div className="row align-items-center gy-4 justify-content-center">
                         <div className="col-xl-6 col-lg-6">
                             <div className="banner__one-content">
-                                <span className="subtitle-one">Digital Growth</span>
+                                <span className="subtitle-one">MD. Mostak Ahmed</span>
                                 <h2>Creating Dynamic and Impactful  <span>Web Experiences</span></h2>
                                 <p>Exploring new possibilities and embracing emerging trends to deliver transformative IT solutions</p>
                                 {/* <Link href="/services" className="btn-two">Find Solutions

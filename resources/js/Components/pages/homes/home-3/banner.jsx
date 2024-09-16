@@ -1,62 +1,50 @@
-import { Link } from '@inertiajs/react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade } from 'swiper/modules';
-import banner1 from "../../../../public/assets/img/banner/banner-three.png";
-import banner2 from "../../../../public/assets/img/banner/banner-three-2.png";
-import shape from "../../../../public/assets/img/banner/banner-three-shape-overlay.png";
 
-const BannerThree = () => {
-  	return (
-		<>
-        <div className="banner__three">
-            <Swiper
-                effect= 'fade'
-                loop={true}
-                autoplay={{
-                    delay: 4500,
-                    disableOnInteraction: false,
-                    reverseDirection: false,
-                }}
-                modules={[Autoplay, EffectFade]}
-            >
-                <SwiperSlide>
-                    <div className="banner__three-single-slide" style={{backgroundImage: `url(${banner1.src})`}}>
-                        <div className="banner__three-bg-shape-overlay" style={{backgroundImage: `url(${shape.src})`}}></div>
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-xl-10">
-                                    <div className="banner__three-content">
-                                        <span className="subtitle-one">Digital Growth</span>
-                                        <h2>Empowering Organizations through <span className="text-bordered">Tech</span>nology</h2>
-                                        <p>Lorem ipsum dolor sit amet, conse ct etur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac ante sed tincidun</p>
-                                        <Link href="/about" className="btn-two">Read More<i className="fas fa-arrow-right"></i></Link>
+import { Link } from '@inertiajs/react';
+import banner1 from "../../../../../../public/assets/img/banner/banner-right-img.jpg";
+import bannerShape from "../../../../../../public/assets/img/shape/banner-shape.png";
+
+const BannerOne = () => {
+    return (
+            <>
+            <div className="banner__one"> 
+                <div className="banner-shape">
+                    <div className="shape banner-shape-1"></div>
+                    <div className="shape banner-shape-2"></div>
+                    <div className="shape banner-shape-3"></div>
+                    <div className="shape banner-shape-4"></div>
+                    <img className="shape banner-shape-5" src={bannerShape} alt="image" />
+                    <div className="shape banner-shape-7"></div>
+                    <div className="shape banner-shape-6"></div>
+                </div>
+                <div className="container">
+                    <div className="row align-items-center gy-4 justify-content-center">
+                        <div className="col-xl-6 col-lg-6">
+                            <div className="banner__one-content">
+                                <span className="subtitle-one">Digital Growth</span>
+                                <h2>Creating Dynamic and Impactful  <span>Web Experiences</span></h2>
+                                <p>Exploring new possibilities and embracing emerging trends to deliver transformative IT solutions</p>
+                                {/* <Link href="/services" className="btn-two">Find Solutions
+                                    <i className="fas fa-arrow-right"></i>
+                                </Link> */}
+                            </div>
+                        </div>
+                        <div className="col-xl-5 offset-xl-1 col-lg-6 col-md-9">
+                            <div className="banner__one-image">
+                                <div className="banner__one-image-wrapper">
+                                    <div className="banner__one-image-wrapper-shapes animate-rotate">
+                                        <div className="shape shape-1"></div>
+                                        <div className="shape shape-2"></div>
                                     </div>
+                                    <img src={banner1} alt="banner-image" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="banner__three-single-slide" style={{backgroundImage: `url(${banner2.src})`}}>
-                        <div className="banner__three-bg-shape-overlay" style={{backgroundImage: `url(${shape.src})`}}></div>
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-xl-10">
-                                    <div className="banner__three-content">
-                                        <span className="subtitle-one">Digital Growth</span>
-                                        <h2>Driving Cutting Edge Innovations</h2>
-                                        <p>Explore the visionary ideas and groundbreaking advancements propelling technology forward. Experience the power of innovation</p>
-                                        <Link href="/about" className="btn-two">Read More<i className="fas fa-arrow-right"></i></Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-            </Swiper>
-        </div>
-		</>
-	);
+                </div>
+            </div>
+        </>
+
+    );
 };
 
-export default BannerThree;
+export default BannerOne;

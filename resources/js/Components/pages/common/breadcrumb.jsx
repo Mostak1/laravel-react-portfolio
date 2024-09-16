@@ -1,8 +1,8 @@
 import { Link } from '@inertiajs/react';
-import image from "../../../../../public/assets/img/banner/page-banner-img.png";
-import shape from "../../../../../public/assets/img/shape/page-banner-shape.png";
 
 const BreadCrumb = ({title, innerTitle}) => {
+    const image = window.imageUrl+"img/banner/page-banner-img.png";
+    const shape = window.imageUrl+"img/shape/page-banner-shape.png";
     return (
         <div className="page__banner">
             <div className="page__banner-shape">

@@ -1,38 +1,38 @@
-"use client"
+"use client";
+import React from 'react';
+import BannerOne from '@/Components/Pages/Homes/Home/Banner';
+import About from '@/Components/Pages/Homes/Home/About';
+import Features from '@/Components/Pages/Homes/Home/Features';
+import Portfolio from '@/Components/Pages/Homes/Home/Portfolio';
+import Pricing from '@/Components/Pages/Homes/Home/Pricing';
+import Blog from '@/Components/Pages/Homes/Home/Blog';
+import Testimonial from '@/Components/Pages/Homes/Home/Testimonial';
 import SEO from "@/components/data/seo";
-import HeaderTwo from "@/components/layout/headers/header/header-two";
-import BannerTwo from "./banner";
-import AboutTwo from "./about";
-import ServicesTwo from "./services";
-import SkillArea from "./skill";
-import Team from "./team";
-import TextSlide from "../home-3/text-slide";
-import ContactForm from "./contact-form";
-import WorkProcess from "./work";
-import TestimonialTwo from "./testimonial";
-import BlogTwo from "./blog";
-import FooterTwo from "@/components/layout/footers/footer-two";
-import ScrollToTop from "../../common/scroll/scroll-to-top";
+import HeaderOne from "@/components/layout/headers/header/header-one";
+import FooterOne from "@/components/layout/footers/footer-one";
+import ScrollToTop from '../../common/scroll/scroll-to-top';
+import ChooseUs from './choose-us';
+import WorkArea from './work';
 
-const HomeTwo = () => {
+
+const HomeOne = () => {
     return (
-        <>
-            <SEO pageTitle="IT Consulting" />
-            <HeaderTwo  />
-            <BannerTwo />
-            <AboutTwo />
-            <ServicesTwo />
-            <SkillArea />
-            <Team />
-            <TextSlide />
-            <ContactForm />
-            <WorkProcess />
-            <TestimonialTwo />
-            <BlogTwo />
-            <FooterTwo />
-            <ScrollToTop />  
-        </>
+        <div>
+            <SEO pageTitle='Technology' />
+            <HeaderOne />
+            <BannerOne />
+            <About />
+            <ChooseUs/>
+            <Features />
+            <Portfolio />
+            {/* <Pricing /> */}
+            <WorkArea/>
+            {/* <Testimonial /> */}
+            {/* <Blog/> */}
+            <FooterOne/>
+            <ScrollToTop/>
+        </div>
     );
 };
 
-export default HomeTwo;
+export default HomeOne;

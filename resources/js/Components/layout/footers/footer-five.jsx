@@ -1,8 +1,8 @@
 import Social from "@/components/data/social";
 import { Link } from '@inertiajs/react';
-import logo from "../../../../../../public/assets/img/logo-1.png";
-import subscribe from "../../../../../../public/assets/img/subscribe/subscribe-three-shape.png";
-import ctaBg from "../../../../../../public/assets/img/subscribe/subscribe-three-bg.png";
+import logo from "../../../../../public/assets/img/logo-1.png";
+import footerBg from "../../../../../public/assets/img/shape/footer-two-bg.png";
+import ctaBg from "../../../../../public/assets/img/subscribe/subscribe-one-shape-1.png";
 import servicesData from "@/components/data/services-data";
 
 const FooterFive = () => {

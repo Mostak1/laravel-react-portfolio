@@ -3,11 +3,11 @@ import Social from "@/components/data/social";
 
 import servicesData from "@/components/data/services-data";
 import { Link } from "@inertiajs/react";
-import logo2 from "../../../../../public/assets/img/logo-2.png";
-import footerBg from "../../../../../public/assets/img/shape/footer-two-bg.png";
-import ctaBg from "../../../../../public/assets/img/subscribe/subscribe-one-shape-1.png";
 
 const FooterOne = () => {
+	const footerBg = window.imageUrl+"img/shape/footer-two-bg.png";
+	const ctaBg = window.imageUrl+"img/subscribe/subscribe-one-shape-1.png";
+	const logo2 = window.imageUrl+"img/logo-2.png";
     return (
         <>
         <div className="subscribe__one">
