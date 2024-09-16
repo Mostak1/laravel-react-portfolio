@@ -3,16 +3,16 @@ import Social from "@/components/data/social";
 
 import servicesData from "@/components/data/services-data";
 import { Link } from "@inertiajs/react";
+import logo2 from "../../../../../public/assets/img/logo-2.png";
+import footerBg from "../../../../../public/assets/img/shape/footer-two-bg.png";
+import ctaBg from "../../../../../public/assets/img/subscribe/subscribe-one-shape-1.png";
 
 const FooterOne = () => {
-const logo = "assets/img/logo-2.png";
-const ctaBg = "assets/img/subscribe/subscribe-one-shape-1.png";
-const footerBg = "assets/img/shape/footer-two-bg.png";
     return (
         <>
         <div className="subscribe__one">
             <div className="container">
-                <div className="row justify-content-center text-center subscribe__one-content" style={{backgroundImage: `url(${ctaBg.src})`}}>
+                <div className="row justify-content-center text-center subscribe__one-content" style={{backgroundImage: `url(${ctaBg})`}}>
                     <div className="col-xl-7 col-lg-8">
                         <div className="subscribe__one-title">
                             <h3>Subscribe Our newsletter</h3>
@@ -26,13 +26,13 @@ const footerBg = "assets/img/shape/footer-two-bg.png";
             </div>
         </div>
 		<div className="footer__two">
-			<img className="footer__two-shape" src={footerBg.src} alt="image" />
+			<img className="footer__two-shape" src={footerBg} alt="image" />
 			<div className="container">
 				<div className="row gy-4 justify-content-between">
 					<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
 						<div className="footer__two-widget">
 							<div className="footer__two-widget-about">
-								<Link href="/"><img src="/assets/img/logo-2.png" alt="image" /></Link>
+								<Link href={route('home')}><img src={logo2} alt="image" /></Link>
 								<p>Financial planners help people to gain knowledge about</p>
 								<div className="footer__two-widget-about-location">
 									<div className="footer__two-widget-about-location-item">
@@ -41,7 +41,7 @@ const footerBg = "assets/img/shape/footer-two-bg.png";
 										</div>
 										<div className="footer__two-widget-about-location-item-info">
 											<span>Phone Number</span>
-											<Link href="tel:(307)555-0133">(307) 555-0133</Link>
+											<Link className="link" href="tel:+8801752243665">+8801752243665</Link>
 										</div>
 									</div>
 								</div>
@@ -53,10 +53,10 @@ const footerBg = "assets/img/shape/footer-two-bg.png";
 							<h4>Quick Link</h4>
 							<div className="footer__two-widget-solution">
 								<ul>
-									<li><Link href="services"><i className="far fa-chevron-double-right"></i>Service</Link></li>
-									<li><Link href="faq"><i className="far fa-chevron-double-right"></i>FAQ</Link></li>
-									<li><Link href="testimonial"><i className="far fa-chevron-double-right"></i>Testimonial</Link></li>
-									<li><Link href="about"><i className="far fa-chevron-double-right"></i>About Us</Link></li>
+									<li><Link className='link' href="#"><i className="far fa-chevron-double-right"></i>Service</Link></li>
+									<li><Link className='link' href="#"><i className="far fa-chevron-double-right"></i>FAQ</Link></li>
+									<li><Link className='link' href={route('project')}><i className="far fa-chevron-double-right"></i>Projects</Link></li>
+									<li><Link className='link' href={route('home')}><i className="far fa-chevron-double-right"></i>About</Link></li>
 								</ul>
 							</div>
 						</div>
@@ -70,7 +70,7 @@ const footerBg = "assets/img/shape/footer-two-bg.png";
 										const words = data.title.split(' ');
 										const firstAndSecondWord = words.slice(0, 2).join(' ');
 										return (
-											<li key={id}><Link href={`/services/${data.id}`}><i className="far fa-chevron-double-right"></i>{firstAndSecondWord}</Link></li>
+											<li key={id}><Link className="link" href={route('home')}><i className="far fa-chevron-double-right"></i>{firstAndSecondWord}</Link></li>
 										);
 									})}
 								</ul>
@@ -95,13 +95,13 @@ const footerBg = "assets/img/shape/footer-two-bg.png";
 					<div className="row justify-content-between copyright__one-container-area">
 						<div className="col-xl-5 col-lg-6"> 
 							<div className="copyright__one-left">
-								<p>© ThemeOri 2024 | All Rights Reserved</p>
+								<p>© Mostak Ahmed 2023 | All Rights Reserved</p>
 							</div>
 						</div>
 						<div className="col-xl-5 col-lg-6">
 							<div className="copyright__one-right">
-								<Link href="/about">Privacy Policy</Link>
-								<Link href="/contact">Contact Us</Link>
+								{/* <Link className="link" href="/about">Privacy Policy</Link> */}
+								<Link className="link" href={route('contact')}>Contact</Link>
 							</div>
 						</div>
 					</div>

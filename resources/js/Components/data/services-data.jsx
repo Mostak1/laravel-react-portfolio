@@ -21,7 +21,7 @@ const servicesData = [
     {
         id: 'app-development',
         icon: <i className="flaticon-mobile-app"></i>,
-        title: 'App Development : Guiding Digital Transformation',
+        title: 'Web Development : Guiding Digital Transformation',
         des: 'Build innovative and user-friendly applications',
     },
     {

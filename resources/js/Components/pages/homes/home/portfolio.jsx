@@ -36,13 +36,13 @@ const Portfolio = () => {
                 <div className="row gy-4 align-items-end justify-content-between mb-5">
                     <div className="col-xl-6 col-lg-7 col-md-9 col-sm-10">
                         <div className="portfolio__one-content-left">
-                            <span className="subtitle-one">Tech Portfolio</span>
-                            <h2>Case Studies in Ingenious IT Portfolio</h2>
+                            <span className="subtitle-one">Tech Project</span>
+                            <h2>Case Studies in Ingenious Web Project</h2>
                         </div>
                     </div>
                     <div className="col-xl-3 col-lg-4">
                         <div className="portfolio__one-content-right text-lg-end">
-                            <Link href="/portfolio/3-columns" className="btn-one">All Portfolio<i className="fas fa-arrow-right"></i></Link>
+                            <Link href={route('project')} className="btn-one">All Projects<i className="fas fa-arrow-right"></i></Link>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ const Portfolio = () => {
                 <Swiper modules={[EffectFade, Autoplay]} {...slideControl} className="py-5">
                     {portfolioData?.map((data, id) => (
                         <SwiperSlide key={id} className="portfolio__one-single-portfolio single-portfolio">
-                            <img src={data.image.src} alt="image" />
+                            <img src={data.image} alt="image" />
                             <div className="portfolio__one-single-portfolio-content">
                                 <h4><Link href={`/portfolio/${data.id}`}>{data.title}</Link></h4>
                                 <span>{data.subtitle}</span>

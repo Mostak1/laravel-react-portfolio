@@ -1,9 +1,9 @@
-const image1 ="assets/img/portfolio/portfolio-6.jpg";
-const image2 ="assets/img/portfolio/portfolio-5.jpg";
-const image3 ="assets/img/portfolio/portfolio-4.jpg";
-const image4 ="assets/img/portfolio/portfolio-3.jpg";
-const image5 ="assets/img/portfolio/portfolio-2.jpg";
-const image6 ="assets/img/portfolio/portfolio-1.jpg";
+import image1 from "../../../../public/assets/img/portfolio/portfolio-6.jpg";
+import image2 from "../../../../public/assets/img/portfolio/portfolio-5.jpg";
+import image3 from "../../../../public/assets/img/portfolio/portfolio-4.jpg";
+import image4 from "../../../../public/assets/img/portfolio/portfolio-3.jpg";
+import image5 from "../../../../public/assets/img/portfolio/portfolio-2.jpg";
+import image6 from "../../../../public/assets/img/portfolio/portfolio-1.jpg";
 
 const portfolioData = [
     {        

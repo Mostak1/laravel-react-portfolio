@@ -31,13 +31,13 @@ const HeaderOne = ({variant}) => {
                 <div className="row">
                     <div className="col-xl-7 col-md-7">
                         <div className="top__bar-left">
-                            <Link href="tel:(629)555-0129"><i className="fas fa-phone-alt"></i>(629) 555-0129</Link>
-                            <Link href="mailto:info@example.com"><i className="fas fa-envelope"></i>info@example.com</Link>
+                            <Link className='link' href="tel:+8801752243665"><i className="fas fa-phone-alt"></i>+8801752243665</Link>
+                            <Link className='link' href="mailto:mdmostaka@gmail.com"><i className="fas fa-envelope"></i>mdmostaka@gmail.com</Link>
                         </div>
                     </div>
                     <div className="col-xl-5 col-md-5">
                         <div className="top__bar-right">
-                            <Link href="https://www.google.com/maps"><i className="fas fa-map-marker-alt"></i>6391 Elgin St. Celina, 10299</Link>
+                            <Link className='link' href="https://www.google.com/maps"><i className="fas fa-map-marker-alt"></i>Jhigatola. Dhanmondi, Dhaka-1207</Link>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ const HeaderOne = ({variant}) => {
                 <div className="header__area-menubar">
                     <div className="header__area-menubar-left">
                         <div className="header__area-menubar-left-logo">
-                            <Link href="/"><img src={logo1} alt="logo" /></Link>
+                            <Link href={route('home')}><img src={logo1} alt="logo" /></Link>
                         </div>
                     </div>
                     <div className="header__area-menubar-center">

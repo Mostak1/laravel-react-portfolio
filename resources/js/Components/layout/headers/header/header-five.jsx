@@ -25,7 +25,7 @@ const HeaderFive = ({variant}) => {
                 <div className="header__area-menubar">
                     <div className="header__area-menubar-left">
                         <div className="header__area-menubar-left-logo">
-                            <Link href="/"><img src={logo1.src} alt="logo" /></Link>
+                            <Link href={route('home')}><img src={logo1.src} alt="logo" /></Link>
                         </div>
                     </div>
                     <div className="header__area-menubar-center">

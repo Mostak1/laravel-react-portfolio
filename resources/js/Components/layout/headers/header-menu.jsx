@@ -7,7 +7,7 @@ const MainMenu = () => {
                 <li className="menu-item-has-children">
                     <Link className='nav-link' href={route("home")}>Home</Link>
                     {/* <ul className="sub-menu">
-                        <li><Link href="/">Home 01</Link></li>
+                        <li><Link href={route('home')}>Home 01</Link></li>
                         <li><Link href="/home-two">Home 02</Link></li>
                         <li><Link href="/home-three">Home 03</Link></li>
                         <li><Link href="/home-four">Home 04</Link></li>

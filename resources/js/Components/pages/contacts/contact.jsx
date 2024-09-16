@@ -9,16 +9,16 @@ import FormArea from "./form";
 const ContactUs = () => {
     return (
         <>
-            <SEO pageTitle="Contact Us" />        
+            <SEO pageTitle="Contact" />        
             <HeaderOne />
-            <BreadCrumb title="Contact Us" innerTitle="Contact Us" />
+            <BreadCrumb title="Contact" innerTitle="Contact" />
             <div className="contact__two section-padding">
                 <div className="container">
                     <div className="row gy-4 align-items-center">
                         <div className="col-xl-6">
                             <div className="contact__two-content">
                                 <div className="contact__two-title">
-                                    <span className="subtitle-one">Contact us</span>
+                                    <span className="subtitle-one">Contact</span>
                                     <h2>Do you have any question? </h2>
                                     <p>For your car we will do everything  advice, repairs and maintenance. We are the some preferred choice by many car owners because</p>
                                 </div>
@@ -35,8 +35,8 @@ const ContactUs = () => {
                                     </div>
                                     <div className="contact__two-single-info-content">
                                         <h4>Email</h4>
-                                        <span>michelle.rivera@example.com</span>
-                                        <span>willie.jennings@example.com</span>
+                                        <span>mostakidb@gmail.com</span>
+                                        <span>mdmostaka@gmail.com</span>
                                     </div>
                                 </div>
                                 <div className="contact__two-single-info">
@@ -45,8 +45,8 @@ const ContactUs = () => {
                                     </div>
                                     <div className="contact__two-single-info-content">
                                         <h4>Contacts</h4>
-                                        <span>(270) 555-0117</span>
-                                        <span>(704) 555-0127</span>
+                                        <span>(+880) 1752243665</span>
+                                        <span>(+880) 1834160283</span>
                                     </div>
                                 </div>
                                 <div className="contact__two-single-info">
@@ -65,7 +65,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="contact__two-single-info-content">
                                         <h4>Location</h4>
-                                        <span>8502 Preston Rd. Inglewood, Maine 98380</span>
+                                        <span>Jhigatola ,Dhanmondi Dhaka-1207</span>
                                     </div>    
                                 </div>
                             </div>

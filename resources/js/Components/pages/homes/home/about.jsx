@@ -1,14 +1,15 @@
 import { Link } from '@inertiajs/react';
 import Count from "../../common/count";
 
+import brand1 from "../../../../../../public/assets/img/brand/brand-1.png";
+import brand2 from "../../../../../../public/assets/img/brand/brand-2.png";
+import brand3 from "../../../../../../public/assets/img/brand/brand-3.png";
+import brand4 from "../../../../../../public/assets/img/brand/brand-4.png";
+import brand5 from "../../../../../../public/assets/img/brand/brand-5.png";
+import about1 from "../../../../../../public/assets/img/about/about-1.png";
+import about2 from "../../../../../../public/assets/img/about/about-2.png";
+
 const About = () => {
-const brand1 ="assets/img/brand/brand-1.png";
-const brand2 ="assets/img/brand/brand-2.png";
-const brand3 ="assets/img/brand/brand-3.png";
-const brand4 ="assets/img/brand/brand-4.png";
-const brand5 ="assets/img/brand/brand-5.png";
-const about1 ="assets/img/about/about-1.png";
-const about2 ="assets/img/about/about-2.png";
     return (
         <>
         <div className="brand__area pt-115">
@@ -19,36 +20,36 @@ const about2 ="assets/img/about/about-2.png";
                             <div className="text-slide">
                                 <div className="sliders scroll">
                                     <div className="brand__area-item">
-                                        <img src={brand1.src} alt="image" />
+                                        <img src={brand1} alt="image" />
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand2.src} alt="image" />
+                                        <img src={brand2} alt="image" />
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand3.src} alt="image" />
+                                        <img src={brand3} alt="image" />
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand4.src} alt="image" />
+                                        <img src={brand4} alt="image" />
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand5.src} alt="image" />
+                                        <img src={brand5} alt="image" />
                                     </div>
                                 </div>
                                 <div className="sliders scroll">
                                     <div className="brand__area-item">
-                                        <img src={brand1.src} alt="image" />
+                                        <img src={brand1} alt="image" />
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand2.src} alt="image" />
+                                        <img src={brand2} alt="image" />
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand3.src} alt="image" />
+                                        <img src={brand3} alt="image" />
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand4.src} alt="image" />
+                                        <img src={brand4} alt="image" />
                                     </div>
                                     <div className="brand__area-item">
-                                        <img src={brand5.src} alt="image" />
+                                        <img src={brand5} alt="image" />
                                     </div>
                                 </div>
                             </div>
@@ -66,31 +67,32 @@ const about2 ="assets/img/about/about-2.png";
                                 <i className="flaticon-consultant"></i>
                                 <div className="experience-bar-right">
                                     <div className="experience-bar-counter">
-                                        <h4 className="counter"><Count number={25}/></h4>
-                                        <span>+</span>
+                                        {/* <h4 className="counter"><Count number={25}/></h4> */}
+                                        {/* <span>+</span> */}
                                     </div>
-                                    <span>Years Experience</span>
+                                    <span>Experience with Web Application</span>
                                 </div>
                             </div>
                             <div className="about__one-image-wrapper">
-                                <img src={about1.src} alt="image" className="image-1" />
-                                <img src={about2.src} alt="image" className="image-2" />
+                                <img src={about1} alt="image" className="image-1" />
+                                <img src={about2} alt="image" className="image-2" />
                             </div>
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-7 col-md-9">
                         <div className="about__one-content">
-                            <span className="subtitle-one">About us</span>
+                            {/* <span className="subtitle-one">About us</span> */}
                             <h2>Transform Business to Technology</h2>
-                            <p>IT Technology is a broad category encompassing all aspec information technology and the application of technology in various industries. It includes areas such as software development</p>
+                            <p>
+                            Information Technology (IT) is a broad field that covers all aspects of technology and its application across different industries. It includes areas like software development, hardware systems, data management, networking, cybersecurity, and more, focusing on leveraging technology to improve operations, productivity, and innovation in both business and everyday life.</p>
                             <div className="about__one-content-service">
                                 <div className="service">
                                     <i className="far fa-check-circle"></i>
-                                    <span>Data Management Experts</span>
+                                    <span>Back-End Development Experts</span>
                                 </div>
                                 <div className="service">
                                     <i className="far fa-check-circle"></i>
-                                    <span>Mobile App Developments</span>
+                                    <span>Web App Developments</span>
                                 </div>
                                 <div className="service">
                                     <i className="far fa-check-circle"></i>
@@ -101,7 +103,7 @@ const about2 ="assets/img/about/about-2.png";
                                     <span>Data Analytics Consulting</span>
                                 </div>
                             </div>
-                            <Link href="/about" className="btn-one">Discover More<i className="fas fa-arrow-right"></i></Link>
+                            {/* <Link href="/about" className="btn-one">Discover More<i className="fas fa-arrow-right"></i></Link> */}
                         </div>
                     </div>
                 </div>

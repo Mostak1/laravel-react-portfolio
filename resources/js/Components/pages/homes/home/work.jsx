@@ -1,11 +1,11 @@
 import Count from "../../common/count";
+import workBg from '../../../../../../public/assets/img/work-process/work-process-bg.png';
+import image1 from '../../../../../../public/assets/img/work-process/work-process-1.png';
+import image2 from '../../../../../../public/assets/img/work-process/work-process-2.png';
 
 const WorkArea = () => {
-    const workBg = 'assets/img/work-process/work-process-bg.png';
-    const image1 = 'assets/img/work-process/work-process-1.png';
-    const image2 = 'assets/img/work-process/work-process-2.png';
     return (
-        <div className="work-process-area__one section-padding" style={{backgroundImage: `url(${workBg.src})`}}>
+        <div className="work-process-area__one section-padding" style={{backgroundImage: `url(${workBg})`}}>
             <div className="container">
                 <div className="row align-items-end work-process-area__one-title">
                     <div className="col-xl-7 col-lg-7">
@@ -46,7 +46,7 @@ const WorkArea = () => {
                     </div>
                     <div className="col-xl-6">
                         <div className="work-process-area__one-right-img">
-                            <img src={image1.src} alt="image" />
+                            <img src={image1} alt="image" />
                         </div>
                         <div className="work-process-area__one-right-counter-img">
                             <div className="img-counter">
@@ -56,7 +56,7 @@ const WorkArea = () => {
                                 </div>
                                 <span>years of experiences</span>
                             </div>
-                            <img src={image2.src} alt="image" />
+                            <img src={image2} alt="image" />
                         </div>
                     </div>
                 </div>

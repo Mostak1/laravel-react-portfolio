@@ -53,7 +53,7 @@ const FooterFour = () => {
 					<div className="col-xl-3 col-md-6 col-sm-7 xl-mb-30">
 						<div className="footer__four-widget">
 							<div className="footer__four-widget-about">
-								<Link href="/"><img src={logo.src} alt="image" /></Link>
+								<Link href={route('home')}><img src={logo.src} alt="image" /></Link>
 								<p>Financial planners help people to gain knowledge about</p>
 								<form action="#">
 									<input type="text" name="email" placeholder="Your e-mail" required="" />

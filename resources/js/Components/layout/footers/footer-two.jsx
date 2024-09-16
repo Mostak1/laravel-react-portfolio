@@ -40,7 +40,7 @@ const FooterTwo = () => {
                     <div className="col-xl-3 col-md-6 col-sm-7 xl-mb-30">
                         <div className="footer__one-widget">
                             <div className="footer__one-widget-about">
-                                <Link href="/"><img src={logo.src} alt="Logo-image" /></Link>
+                                <Link href={route('home')}><img src={logo.src} alt="Logo-image" /></Link>
                                 <p>Financial planners help people to gain knowledge about</p>
                                 <div className="footer__one-widget-about-social">
                                     <h4>Follow us</h4>	

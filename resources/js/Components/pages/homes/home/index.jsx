@@ -25,10 +25,10 @@ const HomeOne = () => {
             <ChooseUs/>
             <Features />
             <Portfolio />
-            <Pricing />
+            {/* <Pricing /> */}
             <WorkArea/>
-            <Testimonial />
-            <Blog/>
+            {/* <Testimonial /> */}
+            {/* <Blog/> */}
             <FooterOne/>
             <ScrollToTop/>
         </div>

@@ -1,6 +1,6 @@
+import image1 from "../../../../../../public/assets/img/why-choose-us/why-choose.png";
+import image2 from "../../../../../../public/assets/img/shape/why-choose-shape.png";
 const ChooseUs = () => {
-    const image1 ="assets/img/why-choose-us/why-choose.png";
-    const image2 ="assets/img/shape/why-choose-shape.png";
     return (
         <>
         <div className="why-choose-us__one section-padding">
@@ -9,7 +9,7 @@ const ChooseUs = () => {
                     <div className="col-xl-6 col-lg-7 col-md-9">
                         <div className="why-choose-us__one-left">
                             <div className="why-choose-us__one-title">
-                                <span className="subtitle-one">Why Chose Us</span>
+                                <span className="subtitle-one">Why Chose</span>
                                 <h2>Tailored IT Strategies for Your Business</h2>
                                 <p>Craft personalized action plans harnessing the latest IT innovations to support your business objectives driving growth advantage</p>
                             </div>
@@ -40,9 +40,9 @@ const ChooseUs = () => {
                             <div className="why-choose-us__one-image-shape">
                                 <div className="shape shape-1 animate-x-axis"></div>
                                 <div className="shape shape-2 animate-x-axis"></div>
-                                <img src={image2.src} alt="image" className="shape shape-3 animate-y-axis" />
+                                <img src={image2} alt="image" className="shape shape-3 animate-y-axis" />
                             </div>
-                            <img src={image1.src} alt="image" />
+                            <img src={image1} alt="image" />
                         </div>
                     </div>
                 </div>

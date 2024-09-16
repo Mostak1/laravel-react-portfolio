@@ -1,6 +1,6 @@
 
+import image from "../../../../../../public/assets/img/service/services.png";
 const Features = () => {
-    const image ="assets/img/service/services.png";
     return (
         <>
         <div className="services__one section-padding">
@@ -40,7 +40,7 @@ const Features = () => {
                     </div>
                     <div className="col-xl-6 col-lg-7">
                         <div className="services-image-wrapper">
-                            <img src={image.src} alt="image" />
+                            <img src={image} alt="image" />
                         </div>
                     </div>
                     <div className="col-xl-3">

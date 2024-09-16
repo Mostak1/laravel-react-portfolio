@@ -19,7 +19,7 @@ const TwoColumns = () => {
                         <div className="col-lg-6" key={id}>
                             <div className="portfolio__two-single-item">
                                 <div className="portfolio__two-single-item-img-wrapper">
-                                    <img src={data.image.src} alt="image" />
+                                    <img src={data.image} alt="image" />
                                 </div>
                                 <div className="portfolio__two-single-item-content">
                                     <div className="portfolio__two-single-item-content-left">

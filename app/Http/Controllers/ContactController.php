@@ -4,12 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+    public function contact(){
+        return Inertia::render('contact/page');
+    }
     public function index()
     {
         //

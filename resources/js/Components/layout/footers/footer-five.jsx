@@ -31,7 +31,7 @@ const FooterFive = () => {
 					<div className="col-xl-3 col-md-6 col-sm-7 xl-mb-30">
 						<div className="footer__five-widget">
 							<div className="footer__five-widget-about">
-								<Link href="/"><img src={logo.src} alt="image" /></Link>
+								<Link href={route('home')}><img src={logo.src} alt="image" /></Link>
 								<p>Financial planners help people to gain knowledge about</p>
 								<div className="footer__five-widget-about-social">
 									<Social />

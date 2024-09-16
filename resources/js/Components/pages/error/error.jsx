@@ -10,7 +10,7 @@ const Error = () => {
                         <div className="error-img">
                             <img src={image.src} alt="image" />
                         </div>
-                        <Link href="/" className="btn-two m-auto d-table">Go Back
+                        <Link href={route('home')} className="btn-two m-auto d-table">Go Back
                             <i className="fas fa-chevron-right"></i>
                         </Link>
                     </div>
